@@ -1,15 +1,16 @@
 <h2  align="center">Coffee Machine</h2>
 
-<p  align="center"><img  src="\resources\banner.png"  height="200"/></p>
+<p  align="center"><img  src="banner.png"  height="200"/></p>
 
+[EN](https://github.com/rafael-s-santos/coffee_machine) | PT
 
 <p  align="center">Colocando em Prática Aprendizados de Programação Orientada a Objeto</p>
 
 Este é um programa Python para uma máquina de café que permite aos usuários selecionar e comprar diversas bebidas de café. O programa possui as seguintes features:
-\ 
+
 ## Requisitos
 
-1.  ### Avise o usuário perguntando "O que você gostaria? (expresso/latte/cappuccino/):"
+1.  ### Avise o usuário perguntando "O que você gostaria? (expresso/latte/cappuccino):"
     -   Verifique a entrada do usuário para decidir o que fazer a seguir.
     -   O aviso deve aparecer sempre que uma ação for concluída, por exemplo, quando a bebida for distribuída. O prompt deve aparecer novamente para atender o próximo cliente.
 

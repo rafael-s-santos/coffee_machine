@@ -1,89 +1,83 @@
-<h2  align="center">Coffee Machine</h2>
+<h2 align="center">Coffee Machine</h2>
 
-<p  align="center"><img  src="\resources\banner.png"  height="200"/></p>
+<p align="center"><img src="\resources\banner.png" height="200" /></p>
 
+EN | [PT](https://github.com/rafael-s-santos/coffee_machine/blob/main/resources/README_PT_BR.md)
 
-<p  align="center">Colocando em Prática Aprendizados de Programação Orientada a Objeto</p>
+<p align="center">Putting Object-Oriented Programming Concepts into Practice</p>
 
-Este é um programa Python para uma máquina de café que permite aos usuários selecionar e comprar diversas bebidas de café. O programa possui as seguintes features:
-\ 
-## Requisitos
+This is a Python program for a coffee machine that allows users to select and purchase various coffee beverages. The program has the following features:
 
-1.  ### Avise o usuário perguntando "O que você gostaria? (expresso/latte/cappuccino/):"
-    -   Verifique a entrada do usuário para decidir o que fazer a seguir.
-    -   O aviso deve aparecer sempre que uma ação for concluída, por exemplo, quando a bebida for distribuída. O prompt deve aparecer novamente para atender o próximo cliente.
+## Requirements
 
-2.  ### Desligue a máquina de café digitando “off” no prompt.
-    -   Os mantenedores da máquina de café podem usar “off” como palavra secreta para desligar a máquina. Seu código deverá encerrar a execução quando isso acontecer.
+1. ### Prompt the user by asking "What would you like? (espresso/latte/cappuccino):"
+   - Check the user input to decide what to do next.
+   - The prompt should appear every time an action is completed, e.g., when the drink is dispensed. The prompt should reappear to serve the next customer.
 
-3.  ### Relatório de impressão.
-    -   Quando o usuário insere "relatório" no prompt, um relatório deve ser gerado mostrando os valores atuais do recurso. por exemplo
-        ```
-        Water: 100ml
-        Milk: 50ml
-        Coffee: 76g
-        Money: $2.5
-        ``` 
-        
-4.  ### Verifique se os recursos são suficientes?
-    
-    -   Quando o usuário escolhe uma bebida, o programa deverá verificar se há recursos suficientes para fazer aquela bebida.
-    -   Por exemplo, se o Latte precisar de 200ml de água, mas restar apenas 100ml na máquina, ela não deverá continuar a preparar a bebida, mas imprimir: "Desculpe, não há água suficiente."
-    -   O mesmo deverá acontecer se outro recurso se esgotar, por exemplo, leite ou café.
- 
-5.  ### Processar moedas.
-    
-    -   Se houver recursos suficientes para selecionar a bebida, o programa deverá solicitar ao usuário a inserção de moedas.
-    -   Lembre-se de que quartos = $ 0,25, moedas de dez centavos = $ 0,10, moedas = $ 0,05, centavos = $ 0,01
-    -   Calcule o valor monetário das moedas inseridas. Por exemplo, 1 quarto, 2 moedas de dez centavos, 1 níquel, 2 centavos = $ 0,52
-6.  ### Verifique se a transação foi bem-sucedida?
-    
-    -   Verifique se o usuário inseriu dinheiro suficiente para comprar a bebida selecionada. Por exemplo, o café com leite custa $ 2,50, mas eles inseriram apenas $ 0,52 e, depois de contar as moedas, o programa deveria dizer "Desculpe, não há dinheiro suficiente. Dinheiro devolvido".
-    -   Mas se o usuário tiver inserido dinheiro suficiente, o custo da bebida será adicionado à máquina como lucro e isso será refletido na próxima vez que o "relatório" for acionado. Por exemplo
-        
-        arquivo makeCopiar código
-        
-        ```
-        Water: 100ml
-        Milk: 50ml
-        Coffee: 76g
-        Money: $2.5
-        ``` 
-        
-    -   Caso o usuário tenha inserido muito dinheiro, a máquina deverá oferecer troco. Por exemplo, "Aqui estão $ 2,45 dólares em troco." A variação deverá ser arredondada para 2 casas decimais.
-7.  ### Fazer café.
-    
-    -   Se a transação for bem-sucedida e houver recursos suficientes para preparar a bebida selecionada pelo usuário, os ingredientes para fazer a bebida deverão ser deduzidos dos recursos da máquina de café.
-    -   Por exemplo, informe antes de comprar café com leite:
-        
-        arquivo makeCopiar código
-        
-        ```
-        Water: 300ml
-        Milk: 200ml
-        Coffee: 100g
-        Money: $0
-        ``` 
-        
-    -   Relatório após comprar café com leite:
-        
-        arquivo makeCopiar código
-        
-        `Water: 100ml
-        Milk: 50ml
-        Coffee: 76g
-        Money: $2.5` 
-        
-    -   Depois que todos os recursos forem deduzidos, diga ao usuário "Aqui está o seu café com leite. Aproveite!" se café com leite fosse sua escolha de bebida.
+2. ### Turn off the coffee machine by typing "off" at the prompt.
+   - The coffee machine maintainers can use "off" as a secret word to turn off the machine. Your code should terminate when this happens.
 
-## Começando
-Para executar o Programa Coffee Machine, siga estes passos:
+3. ### Print a report.
+   - When the user enters "report" at the prompt, a report should be generated showing the current resource values, e.g.,
+     ```
+     Water: 100ml
+     Milk: 50ml
+     Coffee: 76g
+     Money: $2.5
+     ```
 
-1.  Certifique-se de ter o Python instalado em seu computador.
-2.  Clone este repositório em sua máquina local.
-3.  Abra seu terminal ou prompt de comando e navegue até o diretório onde você clonou o repositório.
-4.  Execute o `coffee_machine.py`script executando o seguinte comando:
-    `python coffee_machine.py` 
-5.  Siga as instruções na tela para interagir com a máquina de café.
-    
-Aproveite seu café! ☕
+4. ### Check if there are sufficient resources?
+   - When the user chooses a drink, the program should check if there are enough resources to make that drink.
+   - For example, if Latte needs 200ml of water but there is only 100ml left in the machine, it should not continue to prepare the drink but print: "Sorry, there is not enough water."
+   - The same should happen if another resource runs out, e.g., milk or coffee.
+
+5. ### Process coins.
+   - If there are sufficient resources to select the drink, the program should ask the user to insert coins.
+   - Remember that quarters = $0.25, dimes = $0.10, nickels = $0.05, pennies = $0.01.
+   - Calculate the monetary value of the coins inserted. For example, 1 quarter, 2 dimes, 1 nickel, 2 pennies = $0.52.
+
+6. ### Check if the transaction was successful?
+   - Check if the user inserted enough money to buy the selected drink. For example, the latte costs $2.50, but they inserted only $0.52, and after counting the coins, the program should say "Sorry, not enough money. Money refunded."
+   - But if the user inserted enough money, the cost of the drink will be added to the machine as profit, and this will be reflected the next time the "report" is triggered. For example,
+     ```
+     Water: 100ml
+     Milk: 50ml
+     Coffee: 76g
+     Money: $2.5
+     ```
+
+   - If the user has inserted too much money, the machine should offer change. For example, "Here is $2.45 in change." The change should be rounded to 2 decimal places.
+
+7. ### Make coffee.
+   - If the transaction is successful, and there are enough resources to prepare the drink selected by the user, the ingredients to make the drink should be deducted from the coffee machine's resources.
+   - For example, inform before buying a latte:
+     ```
+     Water: 300ml
+     Milk: 200ml
+     Coffee: 100g
+     Money: $0
+     ```
+
+   - Report after buying a latte:
+     ```
+     Water: 100ml
+     Milk: 50ml
+     Coffee: 76g
+     Money: $2.5
+     ```
+
+   - After all resources are deducted, tell the user "Here is your latte. Enjoy!" if a latte was their chosen beverage.
+
+## Getting Started
+To run the Coffee Machine Program, follow these steps:
+
+1. Make sure you have Python installed on your computer.
+2. Clone this repository to your local machine.
+3. Open your terminal or command prompt and navigate to the directory where you cloned the repository.
+4. Run the `coffee_machine.py` script by executing the following command:
+```
+python coffee_machine.py
+```
+5. Follow the on-screen instructions to interact with the coffee machine.
+
+Enjoy your coffee! ☕
