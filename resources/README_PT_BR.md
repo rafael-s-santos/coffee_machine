@@ -1,6 +1,6 @@
 <h2  align="center">Coffee Machine</h2>
 
-<p  align="center"><img  src="banner.png"  height="400"/></p>
+<p  align="center"><img  src="banner.png"  height="320"/></p>
 
 [EN](https://github.com/rafael-s-santos/coffee_machine) | PT
 
