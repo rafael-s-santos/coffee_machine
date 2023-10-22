@@ -38,7 +38,8 @@ This is a Python program for a coffee machine that allows users to select and pu
 
 6. ### Check if the transaction was successful?
    - Check if the user inserted enough money to buy the selected drink. For example, the latte costs $2.50, but they inserted only $0.52, and after counting the coins, the program should say "Sorry, not enough money. Money refunded."
-   - But if the user inserted enough money, the cost of the drink will be added to the machine as profit, and this will be reflected the next time the "report" is triggered. For example,
+   - But if the user inserted enough money, the cost of the drink will be added to the machine as profit, and this will be reflected the next time the "report" is triggered. For example:
+   
      ```
      Water: 100ml
      Milk: 50ml
@@ -51,6 +52,7 @@ This is a Python program for a coffee machine that allows users to select and pu
 7. ### Make coffee.
    - If the transaction is successful, and there are enough resources to prepare the drink selected by the user, the ingredients to make the drink should be deducted from the coffee machine's resources.
    - For example, inform before buying a latte:
+
      ```
      Water: 300ml
      Milk: 200ml
@@ -59,6 +61,7 @@ This is a Python program for a coffee machine that allows users to select and pu
      ```
 
    - Report after buying a latte:
+
      ```
      Water: 100ml
      Milk: 50ml

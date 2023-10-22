@@ -10,7 +10,7 @@ Este é um programa Python para uma máquina de café que permite aos usuários 
 
 ## Requisitos
 
-1.  ### Avise o usuário perguntando "O que você gostaria? (expresso/latte/cappuccino):"
+1.  ### Pergunta ao usuário "What would you like? (expresso/latte/cappuccino):"
     -   Verifique a entrada do usuário para decidir o que fazer a seguir.
     -   O aviso deve aparecer sempre que uma ação for concluída, por exemplo, quando a bebida for distribuída. O prompt deve aparecer novamente para atender o próximo cliente.
 
@@ -18,7 +18,7 @@ Este é um programa Python para uma máquina de café que permite aos usuários 
     -   Os mantenedores da máquina de café podem usar “off” como palavra secreta para desligar a máquina. Seu código deverá encerrar a execução quando isso acontecer.
 
 3.  ### Relatório de impressão.
-    -   Quando o usuário insere "relatório" no prompt, um relatório deve ser gerado mostrando os valores atuais do recurso. por exemplo
+    -   Quando o usuário insere "report" no prompt, um relatório deve ser gerado mostrando os valores atuais do recurso. por exemplo
         ```
         Water: 100ml
         Milk: 50ml
@@ -35,15 +35,13 @@ Este é um programa Python para uma máquina de café que permite aos usuários 
 5.  ### Processar moedas.
     
     -   Se houver recursos suficientes para selecionar a bebida, o programa deverá solicitar ao usuário a inserção de moedas.
-    -   Lembre-se de que quartos = $ 0,25, moedas de dez centavos = $ 0,10, moedas = $ 0,05, centavos = $ 0,01
-    -   Calcule o valor monetário das moedas inseridas. Por exemplo, 1 quarto, 2 moedas de dez centavos, 1 níquel, 2 centavos = $ 0,52
+    -   Lembre-se de que quarters = $0.25, dimes = $0.10, nickels = $0.05 e pennies = $0.01.
+    -   Calcule o valor monetário das moedas inseridas. Por exemplo, 1 quarter, 2 nickels, 1 nickel, 2 pennies = $ 0,52
 6.  ### Verifique se a transação foi bem-sucedida?
     
-    -   Verifique se o usuário inseriu dinheiro suficiente para comprar a bebida selecionada. Por exemplo, o café com leite custa $ 2,50, mas eles inseriram apenas $ 0,52 e, depois de contar as moedas, o programa deveria dizer "Desculpe, não há dinheiro suficiente. Dinheiro devolvido".
-    -   Mas se o usuário tiver inserido dinheiro suficiente, o custo da bebida será adicionado à máquina como lucro e isso será refletido na próxima vez que o "relatório" for acionado. Por exemplo
-        
-        arquivo makeCopiar código
-        
+    -   Verifique se o usuário inseriu dinheiro suficiente para comprar a bebida selecionada. Por exemplo, o latte custa $ 2,50, mas eles inseriram apenas $ 0,52 e, depois de contar as moedas, o programa deveria dizer "Sorry, not enough money. Money refunded." ("Desculpe, não há dinheiro suficiente. Dinheiro devolvido.").
+    -   Mas se o usuário tiver inserido dinheiro suficiente, o custo da bebida será adicionado à máquina como lucro e isso será refletido na próxima vez que o "report" for acionado. Por exemplo:
+          
         ```
         Water: 100ml
         Milk: 50ml
@@ -51,13 +49,11 @@ Este é um programa Python para uma máquina de café que permite aos usuários 
         Money: $2.5
         ``` 
         
-    -   Caso o usuário tenha inserido muito dinheiro, a máquina deverá oferecer troco. Por exemplo, "Aqui estão $ 2,45 dólares em troco." A variação deverá ser arredondada para 2 casas decimais.
+    -   Caso o usuário tenha inserido muito dinheiro, a máquina deverá oferecer troco. Por exemplo, "Here is $2.45 in change." ("Aqui estão $ 2,45 dólares em troco."). A variação deverá ser arredondada para 2 casas decimais.
 7.  ### Fazer café.
     
     -   Se a transação for bem-sucedida e houver recursos suficientes para preparar a bebida selecionada pelo usuário, os ingredientes para fazer a bebida deverão ser deduzidos dos recursos da máquina de café.
-    -   Por exemplo, informe antes de comprar café com leite:
-        
-        arquivo makeCopiar código
+    -   Por exemplo, informe antes de comprar latte:
         
         ```
         Water: 300ml
@@ -66,16 +62,16 @@ Este é um programa Python para uma máquina de café que permite aos usuários 
         Money: $0
         ``` 
         
-    -   Relatório após comprar café com leite:
+    -   Relatório após comprar latte:
         
-        arquivo makeCopiar código
-        
-        `Water: 100ml
+        ```
+        Water: 100ml
         Milk: 50ml
         Coffee: 76g
-        Money: $2.5` 
+        Money: $2.5`
+        ``` 
         
-    -   Depois que todos os recursos forem deduzidos, diga ao usuário "Aqui está o seu café com leite. Aproveite!" se café com leite fosse sua escolha de bebida.
+    -   Depois que todos os recursos forem deduzidos, diga ao usuário "Here is your latte. Enjoy!" ("Aqui está o seu latte. Aproveite!") se latte fosse sua escolha de bebida.
 
 ## Começando
 Para executar o Programa Coffee Machine, siga estes passos:
